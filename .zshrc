@@ -15,6 +15,12 @@ bindkey -v
 alias vi="vim"
 alias edit="vim"
 
+# Alias for lldb
+# NOTE: This is OS X Specific
+alias gdb="lldb"
+
+# # # # # Zsh Option Configurations # # # # #
+
 # Set the location of the history file, the maximum number of events stored
 # in the internal history list, and the maximum number of history events
 # to save in the history file.
@@ -22,9 +28,11 @@ HISTFILE=${HOME}/.zsh_history
 HISTSIZE=1000
 SAVEHIST=1000
 
-# Alias for lldb
-# NOTE: This is OS X Specific
-alias gdb="lldb"
+# Automatically call cd if you enter a directory name.
+setopt AUTO_CD
+
+# 10 second delay before calling rm, if the term involves a * regex.
+setopt RM_STAR_WAIT
 
 # # # # # Modular components # # # # #
 # This section of my Zsh profile is devoted to invoking each profile module.

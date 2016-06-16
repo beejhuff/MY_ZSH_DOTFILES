@@ -11,6 +11,13 @@ alias e="echo;"
 alias l="echo;echo;echo;echo;"
 alias ll="echo;echo;echo;echo;echo;echo;echo;echo;"
 
+# Quickly edit/source config files for vim and zsh.
+alias ezshrc="vim ~/.zshrc"
+alias szshrc="source ~/.zshrc"
+
+alias evimrc="vim ~/.vimrc"
+alias svimrc="source ~/.vimrc"
+
 # # # # # Navigation aliases # # # # #
 
 # This alias will open a Finder window, in the current directory path.
@@ -46,8 +53,3 @@ alias clean_iterm_logs='ls -1t ~/.iterm_logs/*.log | tail -n+10 | xargs rm -v'
 # These open reference PDF's stored on my local machine.
 alias cheat_sheet_xcode='open -a Preview ~/CODE_REPO/SWIFT/XCODE_CHEAT_SHEET/xcode-cheat-sheet-page01.png'
 alias cheat_sheet_git_markdown='open -a Preview ~/Documents/PDFS/markdown-cheatsheet-online.pdf'
-
-# Quickly source config files
-alias sourcebash="source ~/.bash_profile"
-alias sourcezsh="source ~/.zshrc"
-alias sourcevim="source ~/.vimrc"
