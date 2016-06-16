@@ -43,3 +43,4 @@ source ~/.zshrc_components/my_functions.zsh
 source ~/.zshrc_components/my_homebrew.zsh
 source ~/.zshrc_components/my_misc.zsh
 source ~/.zshrc_components/my_networking.zsh
+source ~/.zshrc_components/my_keybindings.zsh
