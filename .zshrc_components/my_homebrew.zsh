@@ -16,19 +16,6 @@ alias brewmysqldir="cd /usr/local/Cellar/mysql"
 alias basedir="/usr/local/Cellar/mysql/5.7.11/"
 alias datadir="/usr/local/Cellar/mysql/5.7.11/data/"
 
-# # # # # Permission functions # # # # #
-
-# This function is used for altering the Cellar permissions.
-# This is needed for using Homebrew in El Capitan if you have
-# not disabled System Integrity Protection.
-# TODO: Add a function to return permissions to normal.
-brew_permissions () {
-    sudo chgrp -R admin /usr/local/bin;
-    sudo chgrp -R admin /usr/local/share;
-    sudo chmod -R g+w /usr/local/bin;
-    sudo chmod -R g+w /usr/local/share;
-}
-
 # # # # # Tree command aliases # # # # #
 
 # View my frequent directories using the tree command
@@ -64,18 +51,5 @@ alias linuxirssi="irssi --config=~/.irssi/linux_config"
 alias newsirssi="irssi --config=~/.irssi/news_config"
 alias sqlirssi="irssi --config=~/.irssi/sql_config"
 
-
-# # # # # Lynx Aliases # # # # #
-# NOTE: These aliases are used to quickly open files and websites in lynx.
-# This is most helpful for opening local files, without need to type the path.
-
 # Open google in lynx
 alias glynx='lynx google.com'
-
-# Open the R introductory manual (stored as a text file)
-alias rhelp='lynx ~/CODE_REPO/LYNX_STORED_HTML/INTRODUCTORY_R_MANUAL/introductory_r_manual.txt'
-
-# # # # # Miscellaneous Homebrew Aliases # # # # #
-
-# This is an alias for glulxe, (Use this instead of frotz.)
-alias frotz="glulxe"
