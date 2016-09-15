@@ -23,7 +23,7 @@ alias wifion='networksetup -setairportpower en0 on'
 alias wifioff='networksetup -setairportpower en0 off'
 
 # # # # # My Network Info Function # # # # #
-# This is a script to print detailed information about each hardware port on
+# This will print detailed information about each hardware port on
 # my Mac computer. This uses the networksetup utility to display information.
 my_networking_info() {
     echo Printing all network services...
